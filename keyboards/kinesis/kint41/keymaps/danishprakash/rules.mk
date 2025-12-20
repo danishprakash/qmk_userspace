@@ -1,4 +1,7 @@
 COMBO_ENABLE = yes
+CAPS_WORD_ENABLE = yes
+AUTO_SHIFT_ENABLE = yes
+WPM_ENABLE = yes
 
 # Teensy will reboot to halfkay without this
 # This would mean reinserting the keyboard everytime
