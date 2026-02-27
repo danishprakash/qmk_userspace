@@ -1,0 +1,30 @@
+qmk userspace
+==============
+
+Custom QMK keymaps for Kinesis Advantage 2 (kint41).
+
+::
+
+    keyboards/kinesis/kint41/keymaps/danishprakash/
+
+Layers
+------
+
+- 0: base QWERTY
+- 1: navigation (HJKL arrows, hold Tab/Esc)
+- 2: numpad on right keywell (hold LGui)
+
+Setup
+-----
+
+::
+
+    qmk config user.overlay_dir="$(realpath ~/code/dotfiles/qmk_userspace)"
+
+Build & flash
+-------------
+
+::
+
+    qmk compile -kb kinesis/kint41 -km danishprakash
+    qmk flash -kb kinesis/kint41 -km danishprakash
